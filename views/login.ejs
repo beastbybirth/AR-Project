@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+	<link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm" action="/login" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+		<label for="isTeacher">Are you a teacher?</label>
+		<input type="checkbox" id="isTeacher" name="isTeacher"><br>
+
+        <input type="submit" value="Login">
+    </form>
+    <a href="/register">Register now !</a>    
+	<script src="/js/login.js"></script>
+</body>
+</html>

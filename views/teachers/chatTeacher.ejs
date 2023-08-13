@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Chat</title>
+    <link rel="stylesheet" href="/css/chat.css" />
+  </head>
+  <body>
+    <div id="connection_id"></div>
+    <div id="message-container"></div>
+    <form id="form">
+      <label for="message-input">Message</label>
+      <input type="text" id="message-input" />
+      <button type="submit" id="send-button">Send</button>
+      <label for="room-input">Student ID</label>
+      <input type="text" id="room-input" />
+      <button type="button" id="room-button">Join</button>
+    </form>
+
+    <div id="student-list">
+      <h2>Student List</h2>
+      <ul id="student-ul"></ul>
+    </div>
+
+    <h1>Student List</h1>
+    <ul id="student-list"></ul>
+    <div id="message-container"></div>
+
+    <script src="/js/chatTeacherBundle.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microcontrollers Quiz</title>
+</head>
+<body>
+  <h1>Microcontrollers Quiz</h1>
+  
+  <form id="quiz-form">
+    <h2>Question 1: What is a microcontroller?</h2>
+    <label>
+      <input type="radio" name="q1" value="a"> A small computer on a chip
+    </label><br>
+    <label>
+      <input type="radio" name="q1" value="b"> A type of memory
+    </label><br>
+    <label>
+      <input type="radio" name="q1" value="c"> A type of sensor
+    </label><br>
+
+    <h2>Question 2: Which of the following is NOT a microcontroller manufacturer?</h2>
+    <label>
+      <input type="radio" name="q2" value="a"> Intel
+    </label><br>
+    <label>
+      <input type="radio" name="q2" value="b"> Arduino
+    </label><br>
+    <label>
+      <input type="radio" name="q2" value="c"> Samsung
+    </label><br>
+
+    <h2>Question 3: Which programming language is commonly used for microcontroller programming?</h2>
+    <label>
+      <input type="radio" name="q3" value="a"> Java
+    </label><br>
+    <label>
+      <input type="radio" name="q3" value="b"> C/C++
+    </label><br>
+    <label>
+      <input type="radio" name="q3" value="c"> Python
+    </label><br>
+    
+    <button type="submit">Submit Quiz</button>
+  </form>
+
+  <script>
+    const quizForm = document.getElementById('quiz-form');
+
+    quizForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const answers = {
+        q1: document.querySelector('input[name="q1"]:checked').value,
+        q2: document.querySelector('input[name="q2"]:checked').value,
+        q3: document.querySelector('input[name="q3"]:checked').value
+      };
+      
+      // You can implement scoring and result display logic here
+      console.log('Answers:', answers);
+    });
+  </script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
